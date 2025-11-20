@@ -15,7 +15,7 @@ textoCadeiraInferior.textContent = `${inferior}`;
 let ingressoEscolhido = document
 .getElementById("tipo-ingresso");
 let tipoIngresso = ingressoEscolhido.value;
-if(tipoIngresso = "superior"){
+if(tipoIngresso == "superior"){
   superior = superior - quantidade;
 }
 //colocar limite de compra de ingresso
