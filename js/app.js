@@ -3,23 +3,20 @@ function comprar(){
 //Recuperar Os Valores
 let quantidade = document.getElementById("qtd").value;
 let pista = 100; 
-let cadeiraSuperior = 200; 
-let cadeiraInferior = 400; 
+let superior = 200; 
+let inferior = 400; 
 let textoPista = document.getElementById("qtd-pista");
 textoPista.textContent = `${pista}`;
 let textoCadeiraSuperior = document.getElementById("qtd-superior");
-textoCadeiraSuperior.textContent = `${cadeiraSuperior}`;
+textoCadeiraSuperior.textContent = `${superior}`;
 let textoCadeiraInferior = document.getElementById("qtd-inferior");
-textoCadeiraInferior.textContent = `${cadeiraInferior}`;
+textoCadeiraInferior.textContent = `${inferior}`;
 //Descontar ingressos do caixa
 let ingressoEscolhido = document
 .getElementById("tipo-ingresso");
-ingressoEscolhido.innerHTML = `<option value="${cadeiraInferior}">Cadeira inferior</option>
-                    <option value="${cadeiraSuperior}">Cadeira superior</option>
-                    <option value="${pista}">Pista</option>`;
-let valorIngressoEscolhido = ingressoEscolhido.value;
- if(valorIngressoEscolhido < quantidade){
-  valorIngressoEscolhido = valorIngressoEscolhido - quantidade;
- }
+let tipoIngresso = ingressoEscolhido.value;
+if(tipoIngresso = "superior"){
+  superior = superior - quantidade;
+}
 //colocar limite de compra de ingresso
 }
