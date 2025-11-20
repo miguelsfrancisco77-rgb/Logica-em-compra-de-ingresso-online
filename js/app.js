@@ -13,7 +13,7 @@ let textoCadeiraInferior = document.getElementById("qtd-inferior");
 textoCadeiraInferior.textContent = `${cadeiraInferior}`;
 //Descontar ingressos do caixa
 let ingressoEscolhido = document
-getElementById("tipo-ingresso");
+.getElementById("tipo-ingresso");
 ingressoEscolhido.innerHTML = `<option value="${cadeiraInferior}">Cadeira inferior</option>
                     <option value="${cadeiraSuperior}">Cadeira superior</option>
                     <option value="${pista}">Pista</option>`;
