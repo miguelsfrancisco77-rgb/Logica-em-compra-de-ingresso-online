@@ -8,7 +8,7 @@ let cadeiraInferior = 400;
 let textoPista = document.getElementById("qtd-pista");
 textoPista.textContent = `${pista}`;
 let textoCadeiraSuperior = document.getElementById("qtd-superior");
-textoCadeiraSuperior.textContent = ${`cadeiraSuperior}`;
+textoCadeiraSuperior.textContent = `${cadeiraSuperior}`;
 let textoCadeiraInferior = document.getElementById("qtd-inferior");
 textoCadeiraInferior.textContent = `${cadeiraInferior}`;
 //Descontar ingressos do caixa
@@ -17,7 +17,7 @@ getElementById("tipo-ingresso");
 ingressoEscolhido.innerHTML = `<option value="${cadeiraInferior}">Cadeira inferior</option>
                     <option value="${cadeiraSuperior}">Cadeira superior</option>
                     <option value="${pista}">Pista</option>`;
-let valorIngressoEscolhido = ingressoEscolhido.value
+let valorIngressoEscolhido = ingressoEscolhido.value;
  if(valorIngressoEscolhido < quantidade){
   valorIngressoEscolhido = valorIngressoEscolhido - quantidade;
  }
