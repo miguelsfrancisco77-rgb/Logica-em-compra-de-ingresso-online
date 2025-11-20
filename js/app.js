@@ -1,7 +1,7 @@
 //adicionar botao de compra
 function comprar(){
 //Recuperar Os Valores
-let quantidade = document.getElementById("qtd");
+let quantidade = document.getElementById("qtd").value;
 let pista = 100; 
 let cadeiraSuperior = 200; 
 let cadeiraInferior = 400; 
@@ -12,5 +12,14 @@ textoCadeiraSuperior.textContent = ${`cadeiraSuperior}`;
 let textoCadeiraInferior = document.getElementById("qtd-inferior");
 textoCadeiraInferior.textContent = `${cadeiraInferior}`;
 //Descontar ingressos do caixa
+let ingressoEscolhido = document
+getElementById("tipo-ingresso");
+ingressoEscolhido.innerHTML = `<option value="${cadeiraInferior}">Cadeira inferior</option>
+                    <option value="${cadeiraSuperior}">Cadeira superior</option>
+                    <option value="${pista}">Pista</option>`;
+let valorIngressoEscolhido = ingressoEscolhido.value
+ if(valorIngressoEscolhido < quantidade){
+  valorIngressoEscolhido = valorIngressoEscolhido - quantidade;
+ }
 //colocar limite de compra de ingresso
 }
