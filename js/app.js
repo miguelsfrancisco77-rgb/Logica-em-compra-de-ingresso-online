@@ -16,7 +16,6 @@ function comprar(){
   if(tipo.value == "inferior" && quantidade <= inferior){
     inferior = inferior - quantidade;
   }
-  
   textoPista.textContent = `${pista}`;
   textoSuperior.textContent = `${superior}`;
   textoInferior.textContent = `${inferior}`;
