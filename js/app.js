@@ -1,9 +1,12 @@
-let pista = 100
-let superior = 200
-let inferior = 400
+let pista = 100;
+let superior = 200;
+let inferior = 400;
 let textoPista = document.getElementById('qtd-pista');
 let textoSuperior = document.getElementById('qtd-superior');
 let textoInferior = document.getElementById('qtd-inferior');
 textoPista.textContent = `${pista}`;
 textoSuperior.textContent = `${superior}`;
 textoInferior.textContent = `${inferior}`;
+function comprar(){
+  pista = pista - 10
+}
