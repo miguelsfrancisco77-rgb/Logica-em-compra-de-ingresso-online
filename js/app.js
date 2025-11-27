@@ -4,3 +4,6 @@ let inferior = 400
 let textoPista = document.getElementById('qtd-pista');
 let textoSuperior = document.getElementById('qtd-superior');
 let textoInferior = document.getElementById('qtd-inferior');
+textoPista.textContent = `${pista}`;
+textoSuperior.textContent = `${superior}`;
+textoInferior.textContent = `${inferior}`;
