@@ -7,7 +7,7 @@ let textoInferior = document.getElementById('qtd-inferior');
 function comprar(){
   let tipo = document.getElementById('tipo-ingresso');
   let quantidade = document.getElementById('qtd');
-  if(tipo.value == "inferior" && quantidade =< inferior){
+  if(tipo.value == "inferior" && quantidade <= inferior){
     inferior = inferior - quantidade;
   }
   
