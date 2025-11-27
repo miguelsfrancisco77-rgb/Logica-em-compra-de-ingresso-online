@@ -6,12 +6,16 @@ let textoSuperior = document.getElementById('qtd-superior');
 let textoInferior = document.getElementById('qtd-inferior');
 function comprar(){
   let tipo = document.getElementById('tipo-ingresso');
-  let quantidade = document.getElementById('qtd');
+  let quantidade = document.getElementById('qtd').value;
+  if(tipo.value == "pista" && quantidade <= pista){
+    pista = pista - quantidade;
+  }
+  if(tipo.value == "superior" && quantidade <= superior){
+    superior = superior - quantidade;
+  }
   if(tipo.value == "inferior" && quantidade <= inferior){
     inferior = inferior - quantidade;
   }
-  
-  
   
   textoPista.textContent = `${pista}`;
   textoSuperior.textContent = `${superior}`;
