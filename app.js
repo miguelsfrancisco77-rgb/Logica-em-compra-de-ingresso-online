@@ -9,8 +9,9 @@ function comprar(){
   let quantidade = document.getElementById('qtd').value;
   if(quantidade > pista){
     alert("quantidade indisponivel");
-  } else(tipo.value == "pista" && quantidade <= pista){
+  } else{if(tipo.value == "pista" && quantidade <= pista){
     pista = pista - quantidade;
+  }
   }
   if(tipo.value == "superior" && quantidade <= superior){
     superior = superior - quantidade;
