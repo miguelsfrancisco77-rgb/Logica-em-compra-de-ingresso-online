@@ -7,11 +7,8 @@ let textoInferior = document.getElementById('qtd-inferior');
 function comprar(){
   let tipo = document.getElementById('tipo-ingresso');
   let quantidade = document.getElementById('qtd').value;
-  if(quantidade > pista){
-    alert("quantidade indisponivel");
-  } else{if(tipo.value == "pista" && quantidade <= pista){
+  if(tipo.value == "pista" && quantidade <= pista){
     pista = pista - quantidade;
-  }
   }
   if(tipo.value == "superior" && quantidade <= superior){
     superior = superior - quantidade;
